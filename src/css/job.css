@@ -1,3 +1,7 @@
+.featured {
+  border-left: 5px solid hsl(180deg, 29%, 50%) !important;
+}
+
 .company,
 .featured {
   border-radius: 5px;
@@ -8,10 +12,6 @@
   gap: 1em;
   background-color: white;
   box-shadow: 0px 20px 50px -20px hsla(180deg, 29%, 50%, 0.6);
-}
-.company .featured,
-.featured .featured {
-  border-left: 5px solid hsl(180deg, 29%, 50%) !important;
 }
 .company .logo,
 .featured .logo {
