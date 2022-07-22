@@ -1,11 +1,11 @@
 import Header from "./components/Header";
-import Users from "./components/Users";
+import Jobs from "./components/Jobs";
 import "./css/global.css";
 function App() {
   return (
     <>
       <Header />
-      <Users />
+      <Jobs />
     </>
   );
 }

@@ -1,0 +1,15 @@
+main {
+  width: 85vw;
+  margin: auto;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+@media (min-width: 1200px) {
+  main {
+    gap: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=jobs.css.map */

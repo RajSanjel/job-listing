@@ -1,0 +1,118 @@
+.company,
+.featured {
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: white;
+  box-shadow: 0px 20px 50px -20px hsla(180deg, 29%, 50%, 0.6);
+}
+.company .featured,
+.featured .featured {
+  border-left: 5px solid hsl(180deg, 29%, 50%) !important;
+}
+.company .logo,
+.featured .logo {
+  position: absolute;
+  top: -1.7em;
+}
+.company .logo img,
+.featured .logo img {
+  width: 50px;
+}
+.company .company-wrapper,
+.featured .company-wrapper {
+  display: flex;
+  margin-top: 1em;
+  gap: 0.4em;
+  height: 1.2em;
+  align-items: center;
+}
+.company .isFeatured,
+.company .isNew,
+.featured .isFeatured,
+.featured .isNew {
+  background-color: hsl(180deg, 14%, 20%);
+  color: white;
+  padding: 0.3em 0.5em 0.1em 0.5em;
+  border-radius: 50px;
+  height: fit-content;
+}
+.company .isNew,
+.featured .isNew {
+  background-color: hsl(180deg, 29%, 50%);
+}
+.company .company__name,
+.featured .company__name {
+  margin-right: 0.8em;
+  font-size: 1rem;
+  color: hsl(180deg, 29%, 50%);
+}
+.company .company__post,
+.featured .company__post {
+  color: hsl(180deg, 14%, 20%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.company hr,
+.featured hr {
+  border: 1px solid transparent;
+  border-top: 1px solid gray;
+}
+.company .infos,
+.featured .infos {
+  display: flex;
+  gap: 0.5em;
+  font-size: 15px;
+  color: hsl(180deg, 14%, 20%);
+}
+.company .skills,
+.featured .skills {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.company .skills button,
+.featured .skills button {
+  background-color: hsla(180deg, 29%, 50%, 0.1);
+  padding: 0.5em;
+  color: hsl(180deg, 29%, 50%);
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.company .desktop_wrapper,
+.featured .desktop_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+@media (min-width: 1200px) {
+  .company,
+.featured {
+    display: flex;
+    flex-direction: row;
+  }
+  .company .desktop_wrapper,
+.featured .desktop_wrapper {
+    gap: 0.5em;
+  }
+  .company .logo,
+.featured .logo {
+    position: static;
+  }
+  .company .logo img,
+.featured .logo img {
+    width: 100%;
+  }
+  .company .skills,
+.featured .skills {
+    position: absolute;
+    right: 2em;
+    top: 38%;
+  }
+}
+
+/*# sourceMappingURL=job.css.map */

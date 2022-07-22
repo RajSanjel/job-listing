@@ -3,7 +3,6 @@ header {
   background-image: url("../images/bg-header-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
   background-color: hsl(180deg, 29%, 50%);
 }
 
