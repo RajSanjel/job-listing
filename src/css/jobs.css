@@ -5,6 +5,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3em;
+  padding-bottom: 10em;
 }
 @media (min-width: 1200px) {
   main {

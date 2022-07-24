@@ -3,7 +3,8 @@
   top: 8em;
   width: 85vw;
   background-color: white;
-  height: 4em;
+  min-height: 4em;
+  max-height: fit-content;
   border-radius: 10px;
   padding: 1em;
   display: flex;

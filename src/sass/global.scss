@@ -17,6 +17,9 @@ body {
 .filters {
     display: flex;
     height: 100%;
+    gap: .3em;
+    flex-wrap: wrap;
+
 }
 
 .filter-buttons,

@@ -8,7 +8,7 @@ const addFilter = (state = initialData, action) => {
       const { data, id } = action;
       for (let i = 0; i < state.list.length; i++) {
         const element = state.list[i];
-        if (element.data === data) {
+        if (element.data.innerHTML === data.innerHTML) {
           return state;
         }
       }
@@ -18,7 +18,6 @@ const addFilter = (state = initialData, action) => {
       };
     case "removeFilter":
       const newArray = state.list.filter((arr) => arr.id !== action.index);
-      console.log(newArray);
       return {
         ...state,
         list: newArray,
