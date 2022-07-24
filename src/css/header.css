@@ -5,5 +5,10 @@ header {
   background-size: cover;
   background-color: hsl(180deg, 29%, 50%);
 }
+@media (min-width: 700px) {
+  header {
+    background-image: url("../images/bg-header-desktop.svg");
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

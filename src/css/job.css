@@ -76,6 +76,7 @@
 }
 .company .skills button,
 .featured .skills button {
+  border-radius: 5px;
   background-color: hsla(180deg, 29%, 50%, 0.1);
   padding: 0.5em;
   color: hsl(180deg, 29%, 50%);
@@ -112,6 +113,21 @@
     position: absolute;
     right: 2em;
     top: 38%;
+  }
+  .company hr,
+.featured hr {
+    display: none;
+  }
+  .company button:hover,
+.featured button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(180deg, 29%, 50%);
+  }
+  .company .company__post:hover,
+.featured .company__post:hover {
+    color: hsl(180deg, 29%, 50%);
+    cursor: pointer;
   }
 }
 

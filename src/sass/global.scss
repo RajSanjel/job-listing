@@ -13,3 +13,37 @@ body {
     box-sizing: border-box;
     font-family: 'League Spartan';
 }
+
+.filters {
+    display: flex;
+    height: 100%;
+}
+
+.filter-buttons,
+.clear-single {
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: hsla(180, 29%, 50%, 0.1);
+    padding: .5em;
+    color: $Desaturated-Dark-Cyan;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: .5em;
+
+}
+
+.filter-buttons {
+    padding-right: 0px;
+    align-items: center;
+}
+
+.clear-single {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: hsla(180, 29%, 50%, 1);
+}

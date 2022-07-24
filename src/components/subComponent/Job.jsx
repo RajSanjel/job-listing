@@ -1,4 +1,5 @@
 import React from "react";
+import { addToFilter } from "../../redux/actions";
 
 export default function User({
   logo,
@@ -13,40 +14,48 @@ export default function User({
   level,
   tools,
   languages,
+  click,
 }) {
   const rolesLevel = [role, level];
-
   return (
-    <section className={` ${isFeatured ? "featured" : "company"}`}>
-      <div className="logo">
-        <img src={logo} alt="company logo" />
-      </div>
-      <div className="desktop_wrapper">
-        <div className="company-wrapper">
-          <h2 className="company__name">{company}</h2>
+    <>
+      <section className={` ${isFeatured ? "featured" : "company"}`}>
+        <div className="logo">
+          <img src={logo} alt="company logo" />
+        </div>
+        <div className="desktop_wrapper">
+          <div className="company-wrapper">
+            <h2 className="company__name">{company}</h2>
 
-          {isNew ? <p className="isNew">NEW!</p> : ""}
-          {isFeatured ? <p className="isFeatured">FEATURED</p> : ""}
+            {isNew ? <p className="isNew">NEW!</p> : ""}
+            {isFeatured ? <p className="isFeatured">FEATURED</p> : ""}
+          </div>
+          <p className="company__post">{position}</p>
+          <div className="infos">
+            <p className="posted">{postedAt} •</p>
+            <p className="work_time">{contract} •</p>
+            <p className="job_place">{location}</p>
+          </div>
         </div>
-        <p className="company__post">{position}</p>
-        <div className="infos">
-          <p className="posted">{postedAt} •</p>
-          <p className="work_time">{contract} •</p>
-          <p className="job_place">{location}</p>
+        <hr />
+        <div className="skills">
+          {rolesLevel.map((display, index) => (
+            <button key={index} onClick={(e) => click(addToFilter(e.target))}>
+              {display}
+            </button>
+          ))}
+          {languages.map((display, index) => (
+            <button key={index} onClick={(e) => click(addToFilter(e.target))}>
+              {display}
+            </button>
+          ))}
+          {tools.map((display, index) => (
+            <button key={index} onClick={(e) => click(addToFilter(e.target))}>
+              {display}
+            </button>
+          ))}
         </div>
-      </div>
-      <hr />
-      <div className="skills">
-        {rolesLevel.map((display, index) => (
-          <button key={index}>{display}</button>
-        ))}
-        {languages.map((display, index) => (
-          <button key={index}>{display}</button>
-        ))}
-        {tools.map((display, index) => (
-          <button key={index}>{display}</button>
-        ))}
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

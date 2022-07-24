@@ -6,4 +6,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $Desaturated-Dark-Cyan;
+
+    @media (min-width:700px) {
+        background-image: url('../images/bg-header-desktop.svg');
+
+    }
 }
